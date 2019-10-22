@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Comp20: Assignment 6</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<style>
+	h1 {
+		color: #FFFFFF
+	}
+	h2 {
+		color: #FFFFFF
+	}
+	body {
+		background-color: #000000;
+	}
+	.SImages {
+		display: inline-block;
+	}
+	div b img {
+		border: 3px dashed #FFFFFF;
+	}
+
+</style>
+
+<body>
+<h1 align="center">
+	Tufts Art Gallery 
+</h1><hr>
+
+<div class="SImages" align="center">
+	<img src="Paint-Jumbo.jpg" width=15% id ="img1">
+	<img src="Paint-Bear.jpg" width=15% id ="img2">
+	<img src="Paint-Dog.jpg" width=15% id ="img3">
+	<img src="Paint-Bird.jpg" width=15% id ="img4">
+	<img src="Paint-Horse.jpg" width=15% id ="img5">
+</div>
+
+<h2 align="center">Get a closer look at the Art!</h2><hr>
+
+<div class="LgImages" align="center"><b>
+	<img src="Paint-Jumbo.jpg" width =50% id="Lgimg1">
+	<img src="Paint-Bear.jpg" width =50% id="Lgimg2">
+	<img src="Paint-Dog.jpg" width =50% id="Lgimg3">
+	<img src="Paint-Bird.jpg" width =50% id="Lgimg4">
+	<img src="Paint-Horse.jpg" width =50% id="Lgimg5">
+</b></div>
+
+<script type="text/javascript">
+function makeArt (n, p) {
+	return
+}
+	
+</script>
+<script type="text/javascript">
+var artShow = new Array(5);
+	artShow[0] = {
+		name: "Jumbo",
+		price: 250
+	};
+	artShow[1] = {
+		name: "Bear",
+		price: 150
+	};
+	artShow[2] = {
+		name: "Dog",
+		price: 750
+	};
+	artShow[3] = {
+		name: "Birds",
+		price: 100
+	};
+	artShow[4] = {
+		name: "Horse",
+		price: 150
+	};
+
+
+	$(document).ready(function() {
+		$("#Lgimg1").hide();
+		$("#Lgimg2").hide();
+		$("#Lgimg3").hide();
+		$("#Lgimg4").hide();
+		$("#Lgimg5").hide();
+		$("#img1").hover(function() {
+			$("#Lgimg2").hide();
+			$("#Lgimg3").hide();
+			$("#Lgimg4").hide();
+			$("#Lgimg5").hide();
+			$("#Lgimg1").fadeIn(1000);
+		});
+	})
+
+	$(document).ready(function() {
+		$("#Lgimg1").hide();
+		$("#Lgimg2").hide();
+		$("#Lgimg3").hide();
+		$("#Lgimg4").hide();
+		$("#Lgimg5").hide();
+		$("#img2").hover(function() {
+			$("#Lgimg1").hide();
+			$("#Lgimg3").hide();
+			$("#Lgimg4").hide();
+			$("#Lgimg5").hide();
+			$("#Lgimg2").fadeIn(1000);
+		});
+	})
+
+	$(document).ready(function() {
+		$("#Lgimg1").hide();
+		$("#Lgimg2").hide();
+		$("#Lgimg3").hide();
+		$("#Lgimg4").hide();
+		$("#Lgimg5").hide();
+		$("#img3").hover(function() {
+			$("#Lgimg1").hide();
+			$("#Lgimg2").hide();
+			$("#Lgimg4").hide();
+			$("#Lgimg5").hide();
+			$("#Lgimg3").fadeIn(1000);
+		});
+	})
+
+	$(document).ready(function() {
+		$("#Lgimg1").hide();
+		$("#Lgimg2").hide();
+		$("#Lgimg3").hide();
+		$("#Lgimg4").hide();
+		$("#Lgimg5").hide();
+		$("#img4").hover(function() {
+			$("#Lgimg1").hide();
+			$("#Lgimg3").hide();
+			$("#Lgimg2").hide();
+			$("#Lgimg5").hide();
+			$("#Lgimg4").fadeIn(1000);
+		});
+	})
+
+	$(document).ready(function() {
+		$("#Lgimg1").hide();
+		$("#Lgimg2").hide();
+		$("#Lgimg3").hide();
+		$("#Lgimg4").hide();
+		$("#Lgimg5").hide();
+		$("#img5").hover(function() {
+			$("#Lgimg1").hide();
+			$("#Lgimg3").hide();
+			$("#Lgimg4").hide();
+			$("#Lgimg2").hide();
+			$("#Lgimg5").fadeIn(1000);
+		});
+	})
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#img1").click(function(){
+		$("#img1").css("opacity", "0.25");
+		alert("Title: " + artShow[0].name + "\n" +
+			"Price: $" + artShow[0].price);
+	});
+	$("#img2").click(function(){
+		$("#img2").css("opacity", "0.25");
+		alert("Title: " + artShow[1].name + "\n" +
+			"Price: $" + artShow[1].price);
+	});
+	$("#img3").click(function(){
+		$("#img3").css("opacity", "0.25");
+
+		alert("Title: " + artShow[2].name + "\n" +
+			"Price: $" + artShow[2].price);
+	});
+	$("#img4").click(function(){
+		$("#img4").css("opacity", "0.25");
+		alert("Title: " + artShow[3].name + "\n" +
+			"Price: $" + artShow[3].price);
+	});
+	$("#img5").click(function(){
+		$("#img5").css("opacity", "0.25");
+		alert("Title: " + artShow[4].name + "\n" +
+			"Price: $" + artShow[4].price);
+	});
+
+	})
+
+</script>
+
+</body>
+</html>
